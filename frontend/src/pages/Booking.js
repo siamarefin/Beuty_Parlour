@@ -33,7 +33,7 @@ const Booking = () => {
 
   if (submitted) {
     return (
-      <div className="booking-confirmation">
+      <div className="booking-confirmation gradient-bg">
         <h2>Thank you for your booking!</h2>
         <p>Your appointment is confirmed.</p>
         <pre>{JSON.stringify(submitted.appointment, null, 2)}</pre>
@@ -42,11 +42,11 @@ const Booking = () => {
   }
 
   return (
-    <form className="booking-form" onSubmit={handleSubmit}>
-      <h2>Book an Appointment</h2>
+    <form className="booking-form gradient-bg" onSubmit={handleSubmit}>
+      <h2>Book Appointment</h2>
       <label>Full Name: <input type="text" name="userName" value={form.userName} onChange={handleChange} required /></label>
       <label>Email Address: <input type="email" name="userEmail" value={form.userEmail} onChange={handleChange} required /></label>
-      <label>Phone Number: <input type="text" name="phone" value={form.phone} onChange={handleChange} /></label>
+      <label>Phone Number: <input type="tel" name="phone" value={form.phone} onChange={handleChange} /></label>
       <label>Preferred Date & Time: <input type="datetime-local" name="appointmentDate" value={form.appointmentDate} onChange={handleChange} required /></label>
       <label>Additional Notes: <textarea name="notes" value={form.notes} onChange={handleChange} /></label>
       <input type="hidden" name="serviceId" value={form.serviceId} />

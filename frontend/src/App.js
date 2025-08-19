@@ -13,7 +13,17 @@ function App() {
     <Router>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">Beauty Parlor</Link>
+          <Link to="/" className="navbar-logo" style={{
+            fontFamily: 'Cinzel, Playfair Display, serif',
+            fontWeight: 900,
+            fontSize: '2.2rem',
+            background: 'linear-gradient(90deg, #FFD700 0%, #FFB300 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            letterSpacing: '2px',
+            textShadow: '0 4px 16px rgba(255,215,0,0.18), 0 1px 4px rgba(0,0,0,0.10)',
+            padding: '0 12px',
+          }}>Chadni Beauty Parlor</Link>
           <div className="navbar-links">
             <Link to="/contact" className="navbar-link">Contact</Link>
           </div>

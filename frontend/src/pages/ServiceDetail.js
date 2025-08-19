@@ -25,7 +25,7 @@ const ServiceDetail = () => {
   if (!service) return <div>Service not found.</div>;
 
   return (
-    <div className="service-detail">
+    <div className="service-detail gradient-bg">
       <h2>{service.name}</h2>
       <p>{service.description}</p>
       <p>Duration: 1 hour</p>

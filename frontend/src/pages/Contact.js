@@ -23,7 +23,7 @@ const Contact = () => {
 
   if (submitted) {
     return (
-      <div className="contact-confirmation">
+      <div className="contact-confirmation gradient-bg">
         <h2>Thank you for contacting us!</h2>
         <p>Your inquiry has been submitted.</p>
       </div>
@@ -31,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form gradient-bg" onSubmit={handleSubmit}>
       <h2>Contact Us</h2>
       <label>Full Name: <input type="text" name="userName" value={form.userName} onChange={handleChange} required /></label>
       <label>Email Address: <input type="email" name="userEmail" value={form.userEmail} onChange={handleChange} required /></label>
